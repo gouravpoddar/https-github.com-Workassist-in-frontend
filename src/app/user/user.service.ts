@@ -10,7 +10,11 @@ export class UserService {
   createApiUrl = "http://devapi.workassist.in/api/v1/admin/user/create";
   updateApiUrl = "http://devapi.workassist.in/api/v1/admin/user/update";
   departmentApiUrl="http://devapi.workassist.in/api/v1/admin/departments";
-  roleApiUrl="http://devapi.workassist.in/api/v1/admin/roles"
+  roleApiUrl="http://devapi.workassist.in/api/v1/admin/roles";
+
+  rolePermissionListApi = "http://devapi.workassist.in/api/v1/admin/modules";
+  
+
 
 
 
@@ -44,5 +48,9 @@ export class UserService {
 
   update(id:any){
     return this._http.post(`${this.updateApiUrl}/${id}`,{headers:this.getHeaders()})
+  }
+
+  rolePermissionList(){
+    return this._http.get(this.rolePermissionListApi,{headers:this.getHeaders()})
   }
 }

@@ -8,13 +8,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { UpdateuserComponent } from './updateuser/updateuser.component';
 import { AdduserComponent } from './adduser/adduser.component';
+import { RolePermissionComponent } from './usermanagement/role-permission/role-permission.component';
 
 
 @NgModule({
   declarations: [
     UsermanagementComponent,
     UpdateuserComponent,
-    AdduserComponent
+    AdduserComponent,
+    RolePermissionComponent
   ],
   imports: [
     CommonModule,

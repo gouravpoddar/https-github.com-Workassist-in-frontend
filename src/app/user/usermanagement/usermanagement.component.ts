@@ -61,7 +61,7 @@ export class UsermanagementComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.updateUser()
+    // this.updateUser()
     this.updateId = this.actRoute.snapshot.paramMap.get('id');
     // console.log(this.updateId,'id----')
 

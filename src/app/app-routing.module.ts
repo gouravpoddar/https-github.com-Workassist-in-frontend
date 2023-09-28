@@ -4,6 +4,7 @@ import { LandingpageComponent } from './landingpage/landingpage/landingpage.comp
 import { DashboardComponent } from './dashboardpage/dashboard/dashboard.component';
 import { LoginComponent } from './auth/login/login.component';
 import { UsermanagementComponent } from './user/usermanagement/usermanagement.component';
+import { RolePermissionComponent } from './user/usermanagement/role-permission/role-permission.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,8 @@ const routes: Routes = [
 },
   {path:'usermanagement',
 component:UsermanagementComponent,
-loadChildren: () => import('./user/user.module').then(m=>m.UserModule)}
+loadChildren: () => import('./user/user.module').then(m=>m.UserModule)},
+// {path:'rolePermission',component:RolePermissionComponent}
   
 ];
 

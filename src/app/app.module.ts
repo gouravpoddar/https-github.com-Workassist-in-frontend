@@ -9,6 +9,7 @@ import { AuthModule } from './auth/auth.module';
 import { DashboardpageModule } from './dashboardpage/dashboardpage.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { UserModule } from './user/user.module';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     LandingpageModule,
     DashboardpageModule,
     AuthModule,
+    UserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
