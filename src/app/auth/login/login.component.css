@@ -1,0 +1,429 @@
+
+.backcolor1{
+    background-color: #E3EBFF;
+
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin:20px 0px 0px 0px ;
+}
+form{
+    max-height: 700px;
+    max-width: 500px;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+input{
+    border: 1px solid black;
+}
+.form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.form-check-label{
+    margin-left: 10px;
+}
+.btn{
+    width: 100%;
+}
+.form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.head{
+    margin-bottom: 40px;
+}
+​
+.fix-width{
+    width: 30%;
+}
+.imgstyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    padding: 15px 15px 0px 15px;
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+.imglogin {
+    max-height: 80px;
+    border-radius: 5px;
+    max-width: 80px;
+    margin-left: 0px;
+}
+/* input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+} */
+.form-check label{
+    padding-top: 13px;
+}
+.form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+}
+.form-control{
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.marg{
+    margin-top: 10px;
+}
+.colr{
+    color: #F42323;
+}
+label img{
+    height: 20px;
+    width: 20px;
+}
+
+
+/* optPage */
+
+.backcolor{
+    background-color: #E3EBFF;
+
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin:20px 0px 0px 0px ;
+}
+form{
+    max-height: 700px;
+    max-width: 500px;
+    border-radius: 5px;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #fff;
+    margin:10% auto;
+    padding: 25px;
+}
+
+input{
+    border: 1px solid black;
+}
+.form-group1{
+    display: flex;
+    border: 1px solid;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.form-check-label{
+    margin-left: 10px;
+}
+.btn{
+    width: 100%;
+}
+.form-check-labelrounded-circle{
+    margin-left: 22px;
+}
+.img_head{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+.head{
+    margin-bottom: 40px;
+}
+​
+.fix-width{
+    width: 30%;
+}
+.imgStyle{
+    height: 80px;
+    width: 80px;
+    background: #F3F3F3;
+    /* padding: 15px 15px 0px 15px; */
+    /* margin: 0px 0px 0px 0px; */
+    border-radius: 50px;
+}
+label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 13px 0px 0px 0px;
+}
+/* input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 15px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    
+} */
+.form-check label{
+    padding-top: 13px;
+}
+.form-check-input{
+    padding: 0px;
+    margin-right: 10px;
+}
+.marg{
+    margin-top: 10px;
+}
+.colr{
+    color: #F42323;
+}
+label img{
+    height: 20px;
+    width: 20px;
+}
+.imgotp {
+    max-height: 130px;
+    border-radius: 5px;
+    max-width: 130px;
+    margin-left: -30px;
+    margin-top: -20px;
+}
+.head p{
+    margin: 0 0 0px;
+}
+.form-control1{
+    width: 50px;
+    padding: 0 15px;
+    outline: none;
+    font-size: 16px;
+    color: #808080;
+    margin: 15px 0 15px 0;
+    
+    box-sizing: border-box;
+    display: block;
+    background-color: #fbfdff;
+    font-weight: 500;
+    opacity: 1;
+    border-radius: 4px;
+    border: 1px solid;
+    
+}
+.form-control1{
+    width: 200px;
+    height: 40px;
+    
+}
+.otpin{
+    display: flex;
+}
+.otpin input{
+    margin-right: 30px;
+}
+h3{
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.form-group h5{
+    /* text-align: end; */
+    margin-left: auto;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    color: #4540DB;
+}
+.marg2{
+    margin-top: 30px;
+}
+
+
+/* alert */
+
+.screen{
+    cursor: pointer;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      width: 300px;
+      height: 250px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2 12px 0 rgba(0,0,0,0.1);
+      text-align: center;
+  }
+  .screen #topIcon{
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #159EEC;
+  }
+  .screen .border-top{
+      position: absolute;
+      top: 70%;
+      height: .5px;
+      width: 90%;
+      background-color: #616161;
+      -webkit-transform: translate(12%, -50%);
+      transform: translate(5%, -50%);
+  }
+  .screen h3{
+      font-weight: 700;
+      font-size: 24px;
+      color: #606060;
+      letter-spacing: 0;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+  .screen p{
+      font-weight: 400;
+      font-size: 16px;
+      color: #616161;
+      letter-spacing: 0.18px;
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      width: 90%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+   .btn-success{
+      background: #159EEC;
+      border: 1px solid #159EEC;
+      border-radius: 100px;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      color: #fff;
+     padding: 10px 50px;
+      font-size: 13px;
+    cursor: pointer;
+    position: relative;
+   bottom: -78%;
+  }
+  .btn-danger{
+    background: #FF1A1A;
+    border: 1px solid #FF1A1A;
+    border-radius: 100px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #fff;
+   padding: 10px 50px;
+    font-size: 13px;
+  cursor: pointer;
+  position: relative;
+ bottom: -78%;
+}
+  .screen button:focus{
+      outline:0;
+    cursor: pointer;
+  }
+  #Bubbles{
+      visibility: hidden;
+  }
+  .un{
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+  }
+  .tr{
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+  }
+  .btn-overlay{
+      background-color: #43D0F1;
+      border: 0;
+      color: #fff;
+      opacity: 0.6;
+      padding: 10px 15px;
+      border-radius: 100px;
+      font-size: 12px;
+      letter-spacing: 0.8px;
+      z-index: 999;
+      width: 100px
+  }
+  .btn-overlay:hover{
+      opacity: 1;
+  }
+  #restart{
+      position: fixed;
+      right: 10px;
+      top: 10px;
+  }
+  #invert{
+      position: fixed;
+      right: 10px;
+      top: 55px;
+  }
+
+  .overlay{
+    position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background-color: rgba(128,128,128,0.5);
+}
+
+.head .bi-pencil-fill{
+    color: #159EEC;
+    margin-left: 20px;
+}
+.head h3{
+    color:#159EEC
+}

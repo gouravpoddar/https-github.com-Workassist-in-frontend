@@ -1,0 +1,50 @@
+
+<div id="bottom-header" class="headhid">
+<div class="container">
+    <button (click)="toggleNavigation()" class="butpo" >
+    
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+    <!-- <span style="padding-left: 25px;">
+        <a class="btn btn-primary buttonstyle "  href="#" target="_self" role="button">Login/Register</a>
+    </span> -->
+
+    <nav class="navstyle" *ngIf="isNavigationOpen">
+    <!-- <nav [ngClass]="{ 'hidden': !isNavigationOpen }" class="navstyle"> -->
+        
+        <ul id="navbar">    
+            <div class="logostyle">
+                 <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+                </div>
+                <div class="closebtn">
+                <button class="btn-primary" (click)="closeNavigation()">click</button>
+
+            </div>
+            <div class="profile">
+                <div class="img-box">
+                    <!-- <i class="bi bi-person-add iconstyle1"></i> -->
+                   <span > <img class="prostyle" src="./assets/images/mobprofile.png" alt="logo"></span>
+                  </div>
+                <div class="txtstyle">
+                    <h2>Hello & welcome</h2>
+                    <span>Login or register</span>
+                </div>
+            </div>
+
+        <li class="listyle1"><a href="#"><img src="./assets/images/home.png" alt="logo"><span class="mrleft">Home</span></a></li>
+        <li class="listyle"><a href="#"><img src="./assets/images/briefcase.png" alt="logo"><span class="mrleft">Jobs</span></a></li>
+        <li class="listyle"><a href="#"><img src="./assets/images/improvement.png" alt="logo"><span class="mrleft">Career services</span></a></li>
+        <li class="listyle"><a href="#"><img src="./assets/images/blog.png" alt="logo"><span class="mrleft">Blogs</span></a></li>
+        <li class="listyle"><a href="#"><img src="./assets/images/more.png" alt="logo"><span class="mrleft">More</span></a></li>
+        <li class="listyle"><a href="#"><img src="./assets/images/feedback.png" alt="logo"><span class="mrleft">Feedback</span></a></li>
+        
+            <span>
+                <p class="emstyle">Are you employer?</p>
+                <a class="btn btn-primary buttonstyle1 "  href="#" target="_self" role="button">Post a job</a>
+            </span>
+    
+      </ul>
+    </nav>
+ </div>
+</div>

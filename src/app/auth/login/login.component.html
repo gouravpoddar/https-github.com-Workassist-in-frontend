@@ -1,0 +1,141 @@
+    <div class="backcolor1" *ngIf="loginpage">
+        <div class="container fix-width">
+            <div class="row">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+                    <div class="inner-info-box text-center imgstyle">
+                        <div class="img-box"><img class="imglogin" src="./assets/images/loginimg.png"></div>
+                      </div>
+                    <div class="head">
+                        <h1>Login or register</h1>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mobile Number:</label>
+                        <input type="text"  class="form-control" id="mobilenumber"
+                            placeholder="+91 | Enter mobile number to get OTP" formControlName="mobile_number" max="10" (keypress)="keyPress($event)">
+                    
+                        </div>
+                        <div class="text-danger" *ngIf="status === 201">{{mobileNumber}}</div>
+                    <!-- <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group1" >
+                                <div class="d-flex">
+                                    <input class="" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" formControlName="option1">
+                                <label class="form-check-label" for="exampleRadios">
+                                    i am a job seeker
+                                        <img src="./assets/images/job-seeker.png">
+                                </label>
+                                </div>                               
+                            </div>       ​
+                        </div>
+        ​
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group1">
+                                <input class="" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" formControlName="option2">
+                                <label class="form-check-label" for="exampleRadios">
+                                    i am a job recruiter
+                                    <img src="./assets/images/recruiter.png">
+                                </label>
+                            </div>                               
+                            </div>
+                        </div> -->
+                        <!-- <div class="form-group d-flex ">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="exampleCheck1">
+                            <label >i agree to Workassist<span
+                                    class="text-primary">Terms of Use</span> & <span class="text-primary">Privacy
+                                    policy.</span></label>
+                        </div> -->
+                    <div class="col-md-12 justify-content-centerv">
+                        <!-- <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Continue</button>   -->
+                        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Continue</button>       ​
+                             ​
+                    </div>
+                    <div class="marg">
+                        <h4><span>Having trouble ?</span><span class="colr">Contact Us</span> </h4>
+                    </div>                   
+                </form>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="backcolor" *ngIf="otpPage">
+            <div class="container fix-width">
+                <div class="row">
+                    <form [formGroup]="otptForm" (ngSubmit)="verifySubmit(otptForm)">
+                        <div class="inner-info-box text-center imgstyle">
+                            <div class="img-box"><img class="imgotp" src="./assets/images/Illustration.png"></div>
+                          </div>
+                        <div class="head">
+                            <h3>{{message1}}</h3>
+                            <div class="d-flex">
+                                <p>{{message2}} +91{{mobileNumber}}</p>
+                                <i class="bi bi-pencil-fill"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" ><h3>Enter OTP</h3></label>
+                            <div class="otpin">
+                                <input type="text" class="form- " id="otp" placeholder="" formControlName="otp" (keypress)="keyPress($event)">
+                                <!-- <input type="text" class="form-control1" id="input2" [(ngModel)]="input2" placeholder="" maxlength="1" formControlName="input2" (input)="moveToNextField($event, 1)" #inputField>
+                                <input type="text" class="form-control1" id="input3" [(ngModel)]="input3" placeholder="" maxlength="1" formControlName="input3" (input)="moveToNextField($event, 2)" #inputField>
+                                <input type="text" class="form-control1" id="input4" [(ngModel)]="input4" placeholder="" maxlength="1" formControlName="input4" (input)="moveToNextField($event, 3)" #inputField>
+                                <input type="text" class="form-control1" id="input5" [(ngModel)]="input5" placeholder="" maxlength="1" formControlName="input5" (input)="moveToNextField($event, 4)" #inputField>
+                                <input type="text" class="form-control1" id="input6" [(ngModel)]="input6" placeholder="" maxlength="1" formControlName="input6" (input)="moveToNextField($event, 0)" #inputField>
+                                <input type="text" class="form-control1" id="otp" placeholder="" maxlength="1" formControlName="otp" hidden> -->
+                            </div>                           
+                        </div>
+                            <div class="form-group d-flex ">
+                                <p>Didn't receive your OTP ?</p>
+                                <h5>Resend OTP</h5>
+                            </div>
+                        <div class="col-md-12 justify-content-center marg2">
+                            <button type="submit" id="button1" class="btn btn-primary">Continue</button>
+            ​
+                        </div>
+                        <div class="marg">
+                            <h4><span>Having trouble ?</span><span class="colr">Contact Us</span> </h4>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Success popup -->
+             <!-- <div *ngIf="verifyStatus == 200">
+            <div class="overlay">
+                <div class="screen container">
+                    <div class="border-top">
+                    </div>
+                      <svg  width="60" height="60" id="topIcon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="currentColor"
+                          d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm-55.808 536.384-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.272 38.272 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336L456.192 600.384z" />
+                      </svg>
+                    <h3>Successful!</h3>
+                    <p>{{verifyMsg}}</p>
+                    <button class="btn-success" (click)="popup()">Ok</button>
+                  </div>
+            </div>
+            </div>  -->
+
+
+            <!-- error popup -->
+            <div *ngIf="verifyStatus === 201">
+                <div class="overlay">
+                <div class="screen container" role="dialog">
+                    <div class="border-top">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="topIcon" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 256 256" xml:space="preserve">
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                          <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill:#FF1A1A; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 45 60.473 c -2.493 0 -4.515 -2.022 -4.515 -4.515 v -36.44 c 0 -2.493 2.022 -4.515 4.515 -4.515 s 4.515 2.022 4.515 4.515 v 36.44 C 49.515 58.451 47.493 60.473 45 60.473 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                          <path d="M 45 75.003 c -1.186 0 -2.348 -0.486 -3.195 -1.333 c -0.203 -0.203 -0.395 -0.44 -0.564 -0.677 c -0.158 -0.248 -0.294 -0.508 -0.406 -0.79 c -0.113 -0.271 -0.203 -0.553 -0.26 -0.836 c -0.056 -0.293 -0.09 -0.586 -0.09 -0.88 c 0 -1.197 0.485 -2.359 1.321 -3.195 c 0.214 -0.215 0.44 -0.407 0.688 -0.564 c 0.249 -0.17 0.508 -0.305 0.779 -0.418 c 0.271 -0.112 0.553 -0.203 0.847 -0.26 c 0.576 -0.112 1.186 -0.112 1.761 0 c 0.294 0.057 0.576 0.148 0.847 0.26 c 0.27 0.112 0.53 0.248 0.778 0.418 c 0.248 0.158 0.474 0.349 0.689 0.564 c 0.834 0.836 1.321 1.997 1.321 3.195 c 0 1.185 -0.486 2.348 -1.321 3.182 c -0.215 0.215 -0.441 0.407 -0.689 0.564 c -0.248 0.159 -0.508 0.305 -0.778 0.418 c -0.271 0.114 -0.553 0.204 -0.847 0.26 C 45.587 74.969 45.293 75.003 45 75.003 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                        </g>
+                        </svg>
+                    <h3>error!</h3>
+                    <p>{{verifyMsg}}</p>
+                    <button class="btn-danger" (click)="errorPopup()">ok</button>
+                  </div>
+                  </div>
+                </div> 
+            

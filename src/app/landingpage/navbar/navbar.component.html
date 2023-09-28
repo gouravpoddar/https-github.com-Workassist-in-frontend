@@ -1,0 +1,87 @@
+<!-- 
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+
+            <button (click)="onclick()" type="button" class="btn  btn-danger">
+              {{ReadMore?"Read More":"Read Less"}}
+            </button>
+
+            
+            <ng-container *ngIf="visible">
+                <div class="bg-white shadow-sm p-3">
+                    <h4>Hello World</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse tempore aut molestiae, unde non soluta! A, nesciunt. Earum facere totam error, nam placeat, quia, veritatis aspernatur voluptate vitae fugit odit.
+                    </p>
+                </div>
+            </ng-container>
+
+
+
+
+        </div>
+    </div>
+</div> -->
+
+<!-- Your Angular template file (e.g., app.component.html) -->
+
+<div style="height: 80vh;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a (click)="toggleSidenav()" href="#" class="nav-link">Close</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu Item 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu Item 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu Item 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu Item 4</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu Item 5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu Item 6</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <button (click)="toggleSidenav()" class="btn btn-primary d-md-none">Toggle Sidebar</button>
+          <div class="collapse d-md-block" [ngClass]="{ 'show': sidebarOpen }">
+            <ul class="list-group">
+              <li class="list-group-item" (click)="toggleSidenav()">Close</li>
+              <li class="list-group-item">Menu Item 1</li>
+              <li class="list-group-item">Menu Item 2</li>
+              <li class="list-group-item">Menu Item 3</li>
+              <li class="list-group-item">Menu Item 4</li>
+              <li class="list-group-item">Menu Item 5</li>
+              <li class="list-group-item">Menu Item 6</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          Main content
+        </div>
+      </div>
+    </div>
+  </div>
+  
